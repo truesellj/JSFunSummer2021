@@ -1,0 +1,94 @@
+# Source: https://github.com/Danimoth/gitattributes/blob/master/Web.gitattributes
+
+# These settings are for any web project
+
+# Handle line endings automatically for files detected as text
+# and leave all files detected as binary untouched.
+* text=lf
+
+#
+# The above will handle all files NOT found below
+#
+
+#
+## These files are text and should be normalized (Convert crlf => lf)
+#
+
+# source code
+*.css text
+*.sass text
+*.scss text
+*.js text
+*.ts text
+*.json text
+*.htm text
+*.html text
+*.xml text
+*.svg text
+*.txt text
+*.sh text
+*.bat text
+
+# git config
+.gitattributes text
+.gitignore text
+.gitconfig text
+
+# package management config
+package.json text
+package-lock.json text
+yarn.lock text
+
+# code analysis config
+.eslintrc text
+
+# misc config
+*.yaml text
+*.yml text
+.editorconfig text
+.quokka text
+
+# build config
+.nvmrc text
+.babelrc text
+.browserslistrc text
+
+# Documentation
+*.md text
+LICENSE text
+AUTHORS text
+
+# Misc
+*.csv text
+
+
+#
+## These files are binary and should be left untouched
+#
+
+# (binary is a macro for -text -diff)
+*.png binary
+*.jpg binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.mov binary
+*.mp4 binary
+*.mp3 binary
+*.gz binary
+*.zip binary
+*.7z binary
+*.ttf binary
+*.eot binary
+*.woff binary
+*.woff2 binary
+*.pdf binary
+
+# Added binary files:
+*.sketch binary
+*.psd binary
+*.ai binary
+*.t2d binary
+*.docx binary
+*.xlsx binary
