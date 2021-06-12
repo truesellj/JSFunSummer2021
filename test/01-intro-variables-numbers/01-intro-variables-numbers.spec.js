@@ -81,12 +81,6 @@ describe("exercises/01-intro-variables-numbers/intro-variables-numbers.js", () =
     });
   });
 
-  describe("getLargerNumber()", () => {
-    it("should return the largest number by comparing both arguments given to the function", () => {
-      expect(getLargerNumber(5, 10)).equal(10);
-    });
-  });
-
   describe("replaceLastName()", () => {
     it("should replace the last name of the full name with the new last name", () => {
       expect(replaceLastName("Gordon Ramsey", "Smith")).equal("Gordon Smith");

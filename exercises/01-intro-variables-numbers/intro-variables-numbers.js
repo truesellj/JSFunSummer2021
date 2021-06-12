@@ -4,9 +4,8 @@ function myName() {
 }
 
 function setTeachersNames(teachersName) {
-  // change code below this line so that we can set the variable.
-  const teachers = null;
-  teachers = teachersName; //  <- this is invalid because teachers is a const. How can we fix this?
+  const teachers = null; // Change this line only
+  teachers = teachersName; //  <- this is invalid because teachers is a const
 
   return teachers;
 }
@@ -87,19 +86,8 @@ function getLastWordInPlaceName(place) {
   return newPlace;
 }
 
-/***
- *  Using Conditonal logic compare both arguments and return the largest argument
- *
- */
-
-function getLargerNumber(arg1, arg2) {
-  let largestNumber;
-
-  return largestNumber;
-}
-
 /*** A person just got married and they need their last name replaced.
- * The function accepts two arguments first agrument being the fullname of the newlywed.
+ * The function accepts two arguments first argument being the fullname of the newlywed.
  * The second argument is the new last name the newlywed will receive after being marred.
  *
  *   ie fullname =  Emily Rose
