@@ -63,7 +63,7 @@ Write down what version of Node.js you have. You can find this out by typing `no
 If you have any existing projects, create a file called .nvmrc your projects' root. Open the file and add your current Node.js version to it. So, for example, if current version of Node.js is 10.22.0, you would type and save the following:
 
 ```
-10.22.0
+v10.22.0
 ```
 
 Finally, before installing NVM, you will need to uninstall your current version Node.js and NPM. How you uninstall depends on your Operating System and how you installed Node.js. For example:
@@ -116,12 +116,12 @@ touch ~/.bash_profile
 This will download and install NVM.
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 ```
 
 In your terminal, you should see a success message like the following:
 
-![Successful NVM intallation output in your terminal](install-screens/terminal-nvm.png)
+![Successful NVM installation output in your terminal](install-screens/terminal-nvm.png)
 
 Pay attention to the last few lines, beginning with `export NVM_DIR="$HOME/.nvm"`. Double check that what you see here is in your profile file. One of these commands should work. That is, one of these commands should return the contents of the file, instead of an error.
 
@@ -143,11 +143,11 @@ nano ~/.profile
 
 Paste the `export NVM_DIR="$HOME/.nvm"` ... lines, save and exit. Repeat for each profile file that already exists.
 
-Restart your terminal. Type `nvm --version`. You should see a version number like e.g. _0.35.3_.
+Restart your terminal. Type `nvm --version`. You should see a version number like e.g. _0.38.0_.
 
 ## Using NVM
 
-You have NVM installed, but you still need to install Node.js. You will need to have the latest stable version of Node installed as of September 2020 (14.10).
+You have NVM installed, but you still need to install Node.js. You will need to have the latest stable version of Node installed as of June 2021 (16.3).
 
 ```
 nvm install node

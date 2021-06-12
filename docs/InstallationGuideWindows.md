@@ -21,11 +21,11 @@ Use can use the [web](https://slack.com/get-started?email_first=1#/signin) or de
 
 ## Visual Studio Code (Recommended)
 
-Visual Studio Code is an IDE, which is an intelligent code editor. We will be teaching with Visual Studio Code and highly recommend that you use it too. If you are experienced with programming and command line, and you believe that you can translate whatever we teach you in Visual Studio Code to your editor of choice, you may opt for another editor, but we will not be able to help you if problems arise.
+Visual Studio Code is an IDE, which is an intelligent code editor. We will be teaching with Visual Studio Code and highly recommend that you use it too. If you are experienced with programming and the command line, and you believe that you can translate whatever we teach you in Visual Studio Code to your editor of choice, you may opt for another editor, but we will not be able to help you if problems arise.
 
 To install, go to https://code.visualstudio.com and click on _Download for Windows_.
 
-When it finishes downloading, double click on the downloaded .exe file and accept the License Agreement. You will accept all of the defaults until you get to the _Select Additional Tasks_ screen. Here are the settings that I use. Be sure to check _Add to PATH_.
+When it finishes downloading, double click on the downloaded _.exe_ file and accept the License Agreement. You will accept all of the defaults until you get to the _Select Additional Tasks_ screen. Here are the settings that I use. Be sure to check _Add to PATH_.
 
 ![Everything but Register Code as an empty editor for support file types](install-screens/vsocde-select-additional-tasks.png)
 
@@ -57,13 +57,13 @@ We recommend you select _Use Visual Studio Code as Git's default editor_ from th
 
 To avoid unnecessary merge conflicts (believe me, merge conflicts are very frustrating), please make sure _Checkout Windows-style, commit Unix-style line endings_ is selected.
 
-When you finish installing, you should see Git Bash on your computer. Open it, type `git --version` to confirm that it works. You should see something like _git version 2.23.0_. Then close out of Git Bash.
+When you finish installing, you should see Git Bash on your computer. Open it, type `git --version` to confirm that it works. You should see something like _git version 2.32.0_. Then close out of Git Bash.
 
 ## Node.js and NPM Packages
 
 Node.js is a JavaScript runtime engine. Basically, it allows you to run JavaScript programs outside of the browser.
 
-You will need to have the latest _Current_ version of Node installed as of September 2020 (14.10). If you already have Node.js installed, type `node -v` in Git Bash. If you do not have the latest version, you will need to remove Node.js and reinstall it again.
+You will need to have the latest _Current_ version of Node installed as of June 2021 (16.3). If you already have Node.js installed, type `node -v` in Git Bash. If you do not have the latest version, you will need to remove Node.js and reinstall it again.
 
 If Node.js is up-to-date, you should update NPM. You can update it with:
 
@@ -71,7 +71,7 @@ If Node.js is up-to-date, you should update NPM. You can update it with:
 npm install -g npm@latest
 ```
 
-To install Node.js, go to https://nodejs.org/en/ and click on the _14.10.X Current_ version.
+To install Node.js, go to https://nodejs.org/en/ and click on the _16.3.X Current_ version.
 
 When it finishes downloading, open the downloaded file. Accept the License Agreement and all of the defaults. If you are asked to allow the app to make changes to your device, click on _Yes_.
 
@@ -79,7 +79,7 @@ When it’s finished installing, open Git Bash and type `node -v` to confirm tha
 
 ### ESLint
 
-ESLint is a linter, meaning that it will point out potential errors while you are typing in a code editor like Visual Studio Code, Atom or Sublime.
+ESLint is a linter, meaning that it will point out potential errors while you are typing in a code editor like Visual Studio Code.
 
 To install ESLint, type this in Git Bash:
 
@@ -141,7 +141,7 @@ Paste the following into the JSON file. Do not overwrite any settings that you a
 
 ## Chrome or Firefox (Recommended)
 
-You should use any modern browser that has good Developer Tools available. (In other words, not Internet Explorer). We recommend Chrome because we will be demostrating Chrome's tools in class, or Firefox:
+You should use any modern browser that has good Developer Tools available. (In other words, not Internet Explorer). We recommend Chrome because we will be demonstrating Chrome's tools in class, or Firefox:
 
 - [Chrome](https://www.google.com/chrome/)
 - [FirefoxDeveloperEdition](https://www.mozilla.org/en-US/firefox/developer/)

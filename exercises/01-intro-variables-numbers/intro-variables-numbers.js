@@ -130,7 +130,7 @@ function capitalizeLastName(fullName) {
  * Ignore me. This is for the tests
  */
 
-module.exports = {
+export {
   myName,
   setTeachersNames,
   add,

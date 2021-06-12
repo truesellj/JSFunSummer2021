@@ -53,13 +53,13 @@ Labor Day - 9/6/2021
 - Visual Studio Code IDE \*
 - Browser Developer Tools
 
-\* We will be teaching with Visual Studio Code and highly recommend that you use it too. If you are experienced with programming and command line, and you believe that you can translate whatever we teach you in Visual Studio Code to your editor of choice, you may opt for another editor, but we will not be able to help you if problems arise.
+\* We will be teaching with Visual Studio Code and highly recommend that you use it too. If you are experienced with programming and the command line, and you believe that you can translate whatever we teach you in Visual Studio Code to your editor of choice, you may opt for another editor, but we will not be able to help you if problems arise.
 
 ## Class Policies
 
 ### Class Format & Communications
 
-The class will be taught over Microsoft Team's video conferencing. AlbanyCanCode adminstration will give you access and provide training over Microsoft Teams. Please contact either Greg or another member of the administrative team for technical support.
+The class will be taught over Microsoft Team's video conferencing. AlbanyCanCode adminstration will give you access and provide training over Microsoft Teams. Please contact either John Sturman or another member of the administrative team for technical support.
 
 Most of the communication outside of class will take place on Slack. Please check it regularly. The class’s public channel is _#jsfun-summer-2021_.
 
@@ -108,29 +108,29 @@ During the first half of class, we will learn the fundamentals of JavaScript and
 - Variables
 - Primitive Data Types
 - Conditionals
-- The Basics with Functions
+- Functions
 - Scope
 - Collections (Arrays, Sets and Objects)
-- A Closer Look at Functions
+- High Order Functions
 
-### Weeks 7 - 10
+### Weeks 6 - 9
 
 We will then dive into working with JavaScript in the browser, followed by an introduction to how the web works. We will learn how JavaScript communicates with remote web servers via AJAX. We will learn about:
 
 - Document Object Model (DOM)
 - Events
-- HTTP(s) Protocol
-- RESTful APIs
 - Asynchronous Programming
+- HTTP(S) Protocol
+- RESTful APIs
 - AJAX
 
-### Week 11 - 12
+### Week 10 - 12
 
 We will then take a look at how to setup and build a JavaScript application as well as how to structure your code. Topics will include:
 
+- Design Patterns
 - NPM
 - Webpack
 - Babel and Browser Backwards Compatibility
 - ES6 Modules
-- Design Patterns
 - Automated Testing

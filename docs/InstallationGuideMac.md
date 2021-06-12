@@ -31,12 +31,12 @@ Xcode can be found in the App Store. It will take around 50 minutes to install, 
 
 [Homebrew](https://brew.sh/) is a package manager for Mac, meaning that it will help make installing and managing a lot of command line software easier. We will be installing Node.js with Homebrew to avoid permission issues.
 
-If you already have Homebrew installed or if you are not sure whether you have it installed, type `brew -v` in your terminal. If you see a response like _Homebrew 2.4.16_, then you have it installed. Update homebrew with `brew update` and then you can skip ahead to the next section. If you get a _command not found_ error, you will need to install Homebrew.
+If you already have Homebrew installed or if you are not sure whether you have it installed, type `brew -v` in your terminal. If you see a response like _Homebrew 3.1.10_, then you have it installed. Update homebrew with `brew update` and then you can skip ahead to the next section. If you get a _command not found_ error, you will need to install Homebrew.
 
 To install Homebrew, type this in your terminal:
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 Hit enter when the installation prompts you to hit enter. At some point, you may be requested to enter your password. The password is the same password you use to login with your computer.
@@ -53,7 +53,7 @@ export PATH="/usr/local/bin:$PATH"
 
 Git is version control software. It is used for sharing code, combining team members' code and managing different versions of your code.
 
-If you are not sure whether you have it installed, type `git --version` in your terminal. If you see output like this - _git version 2.28.0_ - then congratulations! You already have git installed and you can skip ahead to the next section.
+If you are not sure whether you have it installed, type `git --version` in your terminal. If you see output like this - _git version 2.32.0_ - then congratulations! You already have git installed and you can skip ahead to the next section.
 
 To install git, type this in your terminal:
 
@@ -65,11 +65,11 @@ When it's finished, type `git --version` to confirm that it has installed.
 
 ## Node.js and NPM Packages
 
-Node.js is a JavaScript runtime engine. Basically, it allows you to run JavaScript programs outside of the browser.
+Node.js is a JavaScript runtime engine. Basically, it allows you to run JavaScript programs outside of the browser like Chrome, Safari or Edge.
 
-You will need to have the latest stable version of Node installed as of September 2020 (14.10). If you already have Node.js installed, type `node -v`. If you do not have the latest version, you can do one of the following to things:
+You will need to have the latest stable version of Node installed as of June 2021 (16.3). If you already have Node.js installed, type `node -v`. If you do not have the latest version, you can do one of the following to things:
 
-1. [Upgrade Node.js with using whatever you installed Node.js with.](https://flaviocopes.com/how-to-update-node/) If you have Node.js projects on your computer and you wish to maintain them, this could break your existing projects.
+1. [Upgrade Node.js via whatever you originally installed Node.js with.](https://flaviocopes.com/how-to-update-node/) If you have Node.js projects on your computer and you wish to maintain them, this could break your existing projects.
 2. Install multiple version of Node.js on your computer with NVM. See the _Node Version Manager (NVM)_ section of the [Linux Installaton Guide](InstallationGuideLinuxAndNVM.md).
 
 You should also update NPM. You can update it with:
@@ -88,7 +88,7 @@ When it’s finished, type `node -v` to confirm that it has installed.
 
 ### ESLint
 
-ESLint is a linter, meaning that it will point out potential errors while you are typing in a code editor like Visual Studio Code, Atom or Sublime.
+ESLint is a linter, meaning that it will point out potential errors in real-time while you are typing in a code editor like Visual Studio Code.
 
 To install ESLint, type:
 
@@ -100,7 +100,7 @@ When it’s finished, type `eslint -v` in your terminal to confirm it has instal
 
 ## Visual Studio Code (Recommended) and Plugins
 
-Visual Studio Code is an IDE, which is an intelligent code editor. We will be teaching with Visual Studio Code and highly recommend that you use it too. If you are experienced with programming and command line, and you believe that you can translate whatever we teach you in Visual Studio Code to your editor of choice, you may opt for another editor, but we will not be able to help you if problems arise.
+Visual Studio Code is an IDE, which is an intelligent code editor. We will be teaching with Visual Studio Code and highly recommend that you use it too. If you are experienced with programming and the command line, and you believe that you can translate whatever we teach you in Visual Studio Code to your editor of choice, you may opt for another editor, but we will not be able to help you if problems arise.
 
 To install, go to https://code.visualstudio.com and click on _Download for Mac_.
 

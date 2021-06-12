@@ -1,7 +1,5 @@
-const chai = require("chai");
-const expect = chai.expect;
-chai.use(require("chai-arrays"));
-const {
+import { expect } from "chai";
+import {
   myName,
   setTeachersNames,
   add,
@@ -15,7 +13,7 @@ const {
   getLargerNumber,
   replaceLastName,
   capitalizeLastName,
-} = require("../../exercises/01-intro-variables-numbers/intro-variables-numbers");
+} from "../../exercises/01-intro-variables-numbers/intro-variables-numbers.js";
 
 describe("exercises/01-intro-variables-numbers/intro-variables-numbers.js", () => {
   describe("myName()", () => {
