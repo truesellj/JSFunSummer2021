@@ -21,7 +21,7 @@ git remove -v
 # You should see your upstream set as https://github.com/AlbanyCanCodeCourses/JSFunSummer2021.git
 ```
 
-At any point, if you see the message "Please tell me who you are." in your command line output, you will need to setup your command line to use your Github account. Follow the instruction underneath where it says "Run", replacing "youremail@example.com" and "Your Name" with your information.
+At any point, if you see the message "Please tell me who you are" in your command line output, you will need to setup your command line to use your Github account. Follow the instruction underneath where it says "Run", replacing "youremail@example.com" and "Your Name" with your information.
 
 #### On Making Pull Requests
 
