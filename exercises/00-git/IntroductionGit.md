@@ -4,4 +4,10 @@
 - Matina Patsos
 
 # Students
-Liso Bailey
+
+- Liso Bailey
+- Cameron Schultz
+- Jahari Crawford-Young
+- Noe Gonzalez
+- Papa Ghansah
+- Victorious Foulks (Vic)
