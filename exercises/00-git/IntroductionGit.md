@@ -5,6 +5,7 @@
 
 # Students
 
+- Torrien Harris
 - Matt Russo
 - Shawn Ballard
 - Liso Bailey
