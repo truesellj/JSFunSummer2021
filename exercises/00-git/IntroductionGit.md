@@ -5,6 +5,7 @@
 
 # Students
 
+- Shawn Ballard
 - Liso Bailey
 - Cameron Schultz
 - Jahari Crawford-Young
