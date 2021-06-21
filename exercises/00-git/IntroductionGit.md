@@ -5,6 +5,7 @@
 
 # Students
 
+- Kelly Ann Raver
 - Tashi Paljor
 - Torrien Harris
 - Matt Russo
