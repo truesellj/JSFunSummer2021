@@ -5,6 +5,7 @@
 
 # Students
 
+- Liso Bailey
 - Cameron Schultz
 - Jahari Crawford-Young
 - Noe Gonzalez
