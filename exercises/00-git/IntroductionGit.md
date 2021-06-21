@@ -5,6 +5,7 @@
 
 # Students
 
+- Tashi Paljor
 - Torrien Harris
 - Matt Russo
 - Shawn Ballard
