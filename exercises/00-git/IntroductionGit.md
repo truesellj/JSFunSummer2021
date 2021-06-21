@@ -5,6 +5,7 @@
 
 # Students
 
+- Cameron Schultz
 - Jahari Crawford-Young
 - Noe Gonzalez
 - Papa Ghansah
