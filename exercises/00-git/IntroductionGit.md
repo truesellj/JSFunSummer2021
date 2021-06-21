@@ -4,4 +4,5 @@
 - Matina Patsos
 
 # Students
- Victorious Foulks (Vic)
+- Papa Ghansah
+- Victorious Foulks (Vic)
