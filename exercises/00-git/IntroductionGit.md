@@ -5,6 +5,7 @@
 
 # Students
 
+- Matt Russo
 - Shawn Ballard
 - Liso Bailey
 - Cameron Schultz
