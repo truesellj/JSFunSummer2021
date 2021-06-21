@@ -4,3 +4,4 @@
 - Matina Patsos
 
 # Students
+ Victorious Foulks (Vic)
