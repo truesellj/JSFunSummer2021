@@ -16,3 +16,4 @@
 - Noe Gonzalez
 - Papa Ghansah
 - Victorious Foulks (Vic)
+- Justin Truesell
