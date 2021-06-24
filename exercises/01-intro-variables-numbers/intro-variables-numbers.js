@@ -129,7 +129,6 @@ export {
   stringLength,
   getLastCharacter,
   getLastWordInPlaceName,
-  getLargerNumber,
   replaceLastName,
   capitalizeLastName,
 };

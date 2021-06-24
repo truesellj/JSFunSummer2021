@@ -10,7 +10,6 @@ import {
   stringLength,
   getLastCharacter,
   getLastWordInPlaceName,
-  getLargerNumber,
   replaceLastName,
   capitalizeLastName,
 } from "../../exercises/01-intro-variables-numbers/intro-variables-numbers.js";
