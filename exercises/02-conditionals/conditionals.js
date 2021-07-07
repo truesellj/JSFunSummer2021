@@ -1,11 +1,12 @@
 /***
- * Change below so that it will also compare data types
- *
- *
+ * Change below so that it will also compare data types.
+ * ```javascript
+ * compareEquality(50, 50); // should return "Equal"
+ * compareEquality(50, "50"); // should return "Not Equal"
+ * ```
  */
 function compareEquality(a, b) {
   if (a == b) {
-    // Change this line
     return "Equal";
   }
   return "Not Equal";
@@ -33,45 +34,40 @@ function testStrictNotEqual(a, b) {
   return "Equal";
 }
 
-/***
- *  Refactor the code down below to use the logical && operator.
- *  This should return "Yes" when it is 6, 7, 8 and 9.
- *  ```javascript
- *  testLogicalAnd(9); // should return "Yes"
- *  testLogicalAnd(6); // should return "Yes"
- *  testLogicalAnd(10); // should return "No"
- *  testLogicalAnd(5); // should return "No"
- *  ```
- *  You must use the && operator to complete the problem.
+/**
+ * Given a number "age", return whether or not someone is a teenager
+ * This is someone who is between 13 and 19 years old.
+ * Use the logical && operator
  */
-
-function testLogicalAnd(num) {
-  // code here
-  if (num <= 6 && num <= 9) {
-    return "Yes";
-  } else if (num === 10) {
-    return "No";
-  }
-  return "No";
+function isTeenager(age) {
+  return; // Return something here
 }
 
 /**
- * Refactor the code down below to use the logical || operator
- * ```javascript
- * testLogicalOr(0) // should return No
- * testLogicalOr(20) // should return Yes
- * testLogicalOr(25) // should return Yes
- * ````
+ * "stringOrNumber" should be true if stringOrNumber is:
+ * - a number
+ * - a string with numeric characters only (e.g. "5", "1.25", "-4")
+ * Use the logical || operator
+ * Hint: See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
+ */
+function isNumeric(stringOrNumber) {
+  return; // Return something here
+}
+
+/***
+ *  Using conditional logic compare both arguments and return the largest argument
  */
 
-function testLogicalOr(num) {
-  // code here
+function getLargerNumber(arg1, arg2) {
+  let largestNumber;
+
+  return largestNumber;
 }
 
 /** Using the modulus operator determine if the argument is an even or odd number */
 
 function isEvenOrOdd(isEven) {
-  return isEven;
+  return; // return something here
 }
 
 /****
@@ -97,7 +93,8 @@ export {
   isEvenOrOdd,
   compareEquality,
   testStrictNotEqual,
-  testLogicalAnd,
-  testLogicalOr,
+  isTeenager,
+  isNumeric,
+  getLargerNumber,
   caseInSwitch,
 };
