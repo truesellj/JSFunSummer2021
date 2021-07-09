@@ -6,7 +6,7 @@
  * ```
  */
 function compareEquality(a, b) {
-  if (a == b) {
+  if (a === b) {
     return "Equal";
   }
   return "Not Equal";
@@ -26,7 +26,7 @@ function compareEquality(a, b) {
 
 function testStrictNotEqual(a, b) {
   // Only Change Code Below this Line
-  if (undefined) {
+  if (a!==b) {
     // Only Change Code Above this Line
 
     return "Not Equal";
@@ -40,7 +40,10 @@ function testStrictNotEqual(a, b) {
  * Use the logical && operator
  */
 function isTeenager(age) {
-  return; // Return something here
+  if(age < 20 && age > 12){
+    return true;
+  }
+  else{return false;}
 }
 
 /**
@@ -51,7 +54,10 @@ function isTeenager(age) {
  * Hint: See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
  */
 function isNumeric(stringOrNumber) {
-  return; // Return something here
+if(isNaN(stringOrNumber) || false){
+  return false;
+}
+else{return true;} 
 }
 
 /***
@@ -59,15 +65,22 @@ function isNumeric(stringOrNumber) {
  */
 
 function getLargerNumber(arg1, arg2) {
-  let largestNumber;
-
+  let largestNumber = undefined;
+  if(arg1 < arg2){
+    largestNumber = arg2;
+  }
+  else{largestNumber = arg1;}
   return largestNumber;
 }
 
 /** Using the modulus operator determine if the argument is an even or odd number */
 
 function isEvenOrOdd(isEven) {
-  return; // return something here
+  let rValue = undefined;
+  if(isEven % 2 == 0){
+    rValue = "Even";}
+  else{rValue = "Odd";}
+  return rValue; // return something here
 }
 
 /****
@@ -87,7 +100,41 @@ function isEvenOrOdd(isEven) {
  * 
  *  *****/
 
-function caseInSwitch(num) {}
+function caseInSwitch(num) {
+  let rValue = undefined;
+  switch(num){
+    case 1:
+      rValue = "ONE";
+      break;
+    case 2:
+      rValue ="TWO";
+      break;
+    case 3:
+      rValue = "THREE";
+      break;
+    case 4:
+      rValue ="FOUR";
+      break;
+    case 5:
+      rValue = "FIVE";
+      break;
+    case 6:
+      rValue = "SIX";
+      break;
+    case 7:
+      rValue = "SEVEN";
+      break;
+    case 8:
+      rValue = "EIGHT";
+      break;
+    case 9:
+      rValue = "NINE";
+      break;
+    default:
+      rValue = "PLEASE TRY AGAIN";
+  }
+  return rValue;
+}
 
 export {
   isEvenOrOdd,

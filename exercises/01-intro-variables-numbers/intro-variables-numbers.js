@@ -126,7 +126,7 @@ function capitalizeLastName(fullName) {
 
   return capitalizeLastName;
 }
-
+replaceLastName("justin truesell", "smith");
 /**
  * Ignore me. This is for the tests
  */
