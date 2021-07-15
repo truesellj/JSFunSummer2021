@@ -7,14 +7,19 @@
  * It should accept a name and return "Hello ______!"
  * @example printGreeting("Tim"); // Hello Tim!
  */
-
+const printGreeting = (aName) =>{
+  const restOf = "Hello " + aName + "!";
+  return restOf;
+}
 /**
  * Create a function named "timesFive". It should multiply a number by 5.
  * @example timesFive(5); // 25
  * @example timesFive(2); // 10
  * @example timesFive(0); // 0
  */
-
+const timesFive = (aNumber) =>{
+  return aNumber *5;
+}
 /**
  * Create a function called "lowerCaseName".
  * If given a string, it should return the string lower cased.
@@ -24,7 +29,16 @@
  * @example lowerCaseName(); // undefined (should not throw an error)
  * @example lowerCaseName(null); // undefined (should not throw an error)
  */
-
+ const lowerCaseName = (upperName) => {
+   let newName = undefined;
+  if(typeof upperName === "string"){
+    newName = upperName.toLowerCase();
+    return newName;
+  }
+  else{
+    return;
+  }
+};
 /**
  * Create a function called "isEvenOrOdd".
  * If given an even number, it should return "even".
@@ -33,12 +47,30 @@
  * @example isEvenOrOdd(3); // odd
  */
 
+const isEvenOrOdd = (aNumber) => {
+  if(aNumber % 2 === 0){
+    return "even";
+  }
+  else{
+    return "odd";  
+  }
+};
 /**
  * Create a function called "countNumberOfDigits".
  * Given an integer, it should return the number of digits in an integer.
  * @example countNumberOfDigits(5000); // 4
  */
-
+ const countNumberOfDigits = (aNum) =>{
+  let digits = 0;
+  let counter = 10;
+  for(let i = 0; i<=(aNum+1);i++){
+    if(i = counter){
+      digits++;
+      counter = counter *10;
+    }
+  }
+  return digits;
+};
 /**
  * Ignore everything below this line. This is for the tests.
  */
