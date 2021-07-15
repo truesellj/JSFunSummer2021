@@ -117,97 +117,13 @@ const isPalindrome = (str) => {};
 
 const removeDuplicates = (numbers) => {};
 
-/**
- * Make an object "myDog" that represents a dog. It should contain the properties:
- * "name", "legs", "tails" and "owners".
- * Each should have a value.
- * "owners" should be an array with a list of owner names.
- * @return {object}
- */
-
-const createDogObject = () => {};
-
-/**
- * Return the value for hat inside of the clothes object
- * @return {string} ballcap
- * @example accessAnItemObject(); // ballcap
- */
-
-const accessAnItemObject = () => {
-  // Do not change clothes here
-  let clothes = {
-    hat: "ballcap",
-    shirt: "jersey",
-    shoes: "cleats",
-  };
-  // Write code here
-};
-
-/**
- * Update the object to contain your first and last name.
- * Add at least three skills inside the array
- * @return {object} student
- * @example updateStudentObject()
-   // {
-    firstName: "Jamal",
-    lastName: "Taylor",
-    skills: ["JavaScript", "Teaching", "Being a permanent student"],
-  }
- */
-
-const updateStudentObject = () => {
-  // Do not change student here
-  let student = {
-    firstName: "",
-    lastName: "",
-    skills: [],
-  };
-  // Write code here
-};
-
-/**
- * Using Object.keys, return all the properties contained in the object.
- * @return {array}
- * @example returnObjectValues(); // [1, 4, "Stacy", "Rocket"]
- */
-
-const returnObjectValues = () => {
-  // Do not change dog here
-  let dog = {
-    tail: 1,
-    legs: 4,
-    owner: "Stacy",
-    name: "Rocket",
-  };
-  // Add code here
-  // HINT: you need to return an array
-};
-
-/**
- * Combine two objects into one
- * @param  {object} obj1
- * @param  {object} obj2
- * @return {object} obj1 and obj2 combined
- * @example
- * const obj1 = { firstName: "Clark" }
- * const obj2 = { lastName: "Kent" }
- * combineObject(obj1, obj2); // { firstName: "Clark", lastName: "Kent" }
- */
-
-const combineObject = (obj1, obj2) => {};
-
 export {
   addToAnArray,
   accessingAnItem,
   highestNumber,
   isPalindrome,
-  createDogObject,
-  updateStudentObject,
-  returnObjectValues,
   combineArray,
-  accessAnItemObject,
-  combineObject,
   removeDuplicates,
-  findAndAbort,
   createArrayOfFunctions,
+  findAndAbort,
 };

@@ -4,18 +4,13 @@ import {
   accessingAnItem,
   highestNumber,
   isPalindrome,
-  createDogObject,
-  updateStudentObject,
-  returnObjectValues,
   combineArray,
-  accessAnItemObject,
-  combineObject,
   removeDuplicates,
   findAndAbort,
   createArrayOfFunctions,
-} from "../../exercises/04-collections/collections.js";
+} from "../../exercises/04-arrays-sets/arrays-sets.js";
 
-describe("exercises/04-collections/collections.js", () => {
+describe("exercises/exercises/04-arrays-sets/arrays-sets.js", () => {
   describe("accessingAnItem()", () => {
     it('should return "BMW"', () => {
       const car = accessingAnItem();
@@ -34,6 +29,9 @@ describe("exercises/04-collections/collections.js", () => {
     it("should merge two arrays into one", () => {
       const combinedArray = combineArray(["HTML"], ["CSS"]);
       expect(combinedArray).to.deep.equal(["HTML", "CSS"]);
+    });
+    it("should should two arrays by using the spread operator", () => {
+      expect(findAndAbort.toString().includes("...")).to.equal(true);
     });
   });
 
@@ -103,11 +101,11 @@ describe("exercises/04-collections/collections.js", () => {
   });
 
   describe("isPalindrome()", () => {
-    it("should return true if a word is a palidrome", () => {
+    it("should return true if a word is a palindrome", () => {
       const result = isPalindrome("eye");
       expect(result).to.be.equal(true);
     });
-    it("should return true false if a word is not a palidrome", () => {
+    it("should return false if a word is not a palindrome", () => {
       const result = isPalindrome("not a palindrome");
       expect(result).to.be.equal(false);
     });
@@ -122,57 +120,6 @@ describe("exercises/04-collections/collections.js", () => {
         2, 3, 4, 4, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 5, 32, 3, 4, 5,
       ]);
       expect(unique).to.deep.equal([2, 3, 4, 5, 6, 7, 32]);
-    });
-  });
-
-  describe("createDogObject()", () => {
-    it('should return an object with the properties "name", "legs", "tails", "owners"', () => {
-      const dog = createDogObject();
-      expect(dog).to.be.an("object");
-      expect(dog).to.have.all.keys("name", "legs", "tails", "owners");
-    });
-    it('the "owners" property should be an array', () => {
-      const dog = createDogObject();
-      expect(dog.owners).to.be.an("array");
-    });
-  });
-
-  describe("accessAnItemObject()", () => {
-    it("should return ballcap", () => {
-      const item = accessAnItemObject();
-      expect(item).to.equal("ballcap");
-    });
-  });
-
-  describe("updateStudentObject()", () => {
-    it("should complete the student object with a first name, last name, and an array of three skills", () => {
-      const student = updateStudentObject();
-      expect(student.firstName).to.be.a("string").to.be.ok;
-      expect(student.lastName).to.be.a("string").to.be.ok;
-      expect(student.skills.length).to.equal(3);
-    });
-  });
-
-  describe("returnObjectValues()", () => {
-    it("should return all the values in an object", () => {
-      const objectValues = returnObjectValues();
-      expect(objectValues).to.deep.equal([1, 4, "Stacy", "Rocket"]);
-    });
-  });
-
-  describe("combineObject()", () => {
-    it("should combine two objects and return a single object", () => {
-      const obj1 = {
-        firstName: "Clark",
-      };
-      const obj2 = {
-        lastName: "Kent",
-      };
-      const combinedObj = combineObject(obj1, obj2);
-      expect(combinedObj).to.deep.equal({
-        firstName: "Clark",
-        lastName: "Kent",
-      });
     });
   });
 });
