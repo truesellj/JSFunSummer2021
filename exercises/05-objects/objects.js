@@ -6,8 +6,16 @@
  * @return {object}
  */
 
-const createDogObject = () => {};
+ const createDogObject = () => {
 
+  let pets = new Object({});
+  pets = {
+    "name" : "Fido",
+    "legs" : "3",
+    "tails" : ".5",
+    "owners" : ["Lucy", "Nancy" ]};
+    return pets;
+};
 /**
  *  CreateGraduateObject function takes in several arguments and combines them together in one object.
  *
@@ -35,13 +43,22 @@ const createDogObject = () => {};
  * }
  */
 
-const createGraduateObject = (
+ const createGraduateObject = (
   name,
   graduationYear,
   skills,
   githubLink,
   linkedInLink
-) => {};
+) => {
+
+  let theObject = {
+    name,
+    graduationYear,
+    skills,
+    links: {github : githubLink, linkedIn : linkedInLink}
+  };
+  return theObject;
+};
 
 /**
  * Return the value for hat inside of the clothes object
@@ -56,7 +73,7 @@ const accessAnItemObject = () => {
     shirt: "jersey",
     shoes: "cleats",
   };
-  // Write code here
+  return clothes.hat;
 };
 
 /**
@@ -71,15 +88,18 @@ const accessAnItemObject = () => {
   }
  */
 
-const updateStudentObject = () => {
-  // Do not change student here
-  let student = {
-    firstName: "",
-    lastName: "",
-    skills: [],
+  const updateStudentObject = () => {
+    // Do not change student here
+    let student = {
+      firstName: "",
+      lastName: "",
+      skills: [],
+    };
+    student.firstName = "Justin";
+    student.lastName = "Truesell";
+    student.skills.push("Computer Science", "Fitness", "CPR");
+    return student;
   };
-  // Write code here
-};
 
 /**
  * Using Object.keys, return all the properties contained in the object.
@@ -95,8 +115,7 @@ const returnObjectValues = () => {
     owner: "Stacy",
     name: "Rocket",
   };
-  // Add code here
-  // HINT: you need to return an array
+  return Object.values(dog);
 };
 
 /**
@@ -110,7 +129,10 @@ const returnObjectValues = () => {
  * combineObject(obj1, obj2); // { firstName: "Clark", lastName: "Kent" }
  */
 
-const combineObject = (obj1, obj2) => {};
+const combineObject = (obj1, obj2) => {
+  obj1 = {...obj1, ...obj2};
+  return obj1;
+};
 
 export {
   createDogObject,
