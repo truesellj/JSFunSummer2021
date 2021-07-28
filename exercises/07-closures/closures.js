@@ -14,7 +14,16 @@
  *
  * (This is technically not a closure. It is here to prepare you for the next problems.)
  */
-const greeter = () => {};
+ const greeter = () => {
+  const meths = {hello : (name) => {
+    return "Hello " + name +"!";
+  }};
+return meths;
+};
+
+let thisVar = greeter();
+const greeting = thisVar.hello("Justin");
+console.log(greeting);
 
 /**
  * Use closures to complete this exercise.
