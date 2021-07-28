@@ -1,6 +1,6 @@
 # First Project: Hangman
 
-**First Submission Due August 16, 2020**
+**First Submission Due August 16, 2021**
 
 For your first project, you will be creating a text based Hangman game with Node.js. Hangman is a word guessing game where the computer picks a word or phrase. A player must guess what the word or phrase is, letter-by-letter. If she make too many guesses, the hangman is "hung" and she will lose.
 
@@ -128,7 +128,7 @@ While you will not fail if you do not meet these quality requirements, we will a
   - [Make a README](https://www.makeareadme.com/)
   - [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 - Add anything that should not be committed to your _.gitigore_ file. Your _node_modules_ folder should be ignored.
-- Choose descriptive and specific names for React components, constants, functions and anything else that is named.
+- Choose descriptive and specific names for variables, constants, functions and anything else that is named.
 - You must not leave any debugging statements in your code. This means when you commit your code, remove any `console.log` statements that are not intended for the user to see.
 - Only have actual comments within comment tags. Do not commit code that you commented out for debugging purposes.
 - Remove any code that is not being used. (This affects application load time as well as code quality.)
