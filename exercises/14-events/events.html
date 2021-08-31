@@ -89,6 +89,7 @@
       <div class="container">
         <!-- Capture what the user is type here -->
         <input
+          id="inputArea"
           type="text"
           class="form-control mb-3"
           placeholder="Enter mystery text here"
@@ -96,29 +97,30 @@
         />
 
         <!-- Display whatever text the user types in the textbox above inside the <div></div> -->
-        <div class="card bg-warning"></div>
+        <div id = "outputArea" class="card bg-warning"></div>
       </div>
     </section>
 
     <section class="bg-dark pt-4 pb-1">
       <div class="container">
         <!-- Handle this form -->
-        <form class="form-group">
+        <form class="form-group" id="sForm">
           <div class="input-group">
             <input
               type="search"
               placeholder="Search for oceans near Albany, NY"
               aria-label="Search for oceans near Albany, NY"
               class="form-control"
+              id = "searchBox"
             />
             <div class="input-group-append">
-              <button class="btn btn-success" type="submit">Search</button>
+              <button class="btn btn-success" type="submit" id = "searchButton">Search</button>
             </div>
           </div>
         </form>
 
         <!-- Display "No results for ___ found" inside of this <p></p> -->
-        <p class="text-white"></p>
+        <p class="text-white" id = "searchOutput"></p>
       </div>
     </section>
 
@@ -293,3 +295,4 @@
     </section>
   </body>
 </html>
+-->

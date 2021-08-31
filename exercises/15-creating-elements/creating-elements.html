@@ -33,6 +33,22 @@
     -->
   </head>
   <body>
-    <!-- Put your HTML here -->
+    <button id = "PutYourNameOnIt"> Click here to create button with your name on it </button>
+    <input id = "nameInput" placeholder="Type Your Button Text Here">
+    <div id = "insertButtonsHere"> </div>
   </body>
+  <script>
+    (function(){
+      const button = document.querySelector("#PutYourNameOnIt");
+      const name = document.querySelector("#nameInput").value;
+      const newButton = document.createElement("button");
+      const whereToInsert = document.querySelector("#insertButtonsHere");
+      const createNamedButton = () => {
+        console.log(button);
+        newButton.textContent= name;
+        whereToInsert.appendChild(newButton);
+      }
+      button.addEventListener("click", createNamedButton);
+    })()
+  </script>
 </html>

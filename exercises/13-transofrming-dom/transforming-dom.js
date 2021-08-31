@@ -5,4 +5,6 @@
  */
 (function () {
   // Put your answers in here
+  let getele = document.querySelector("data-mylink");
+  getele.removeAttribute("target");
 })();

@@ -13,6 +13,13 @@
  * @param {number} a
  * @param {number} b
  */
-const multiplier = (a, b) => {};
+const multiplier = (a, b) => {
+  let oneVar = (oneV) =>{
+    let twoVar = (twoV) => {
+      return oneV*twoV;
+    };
+  };
+  return oneVar;
+};
 
 export { multiplier };

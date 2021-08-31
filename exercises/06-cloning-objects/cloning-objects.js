@@ -1,3 +1,6 @@
+import {enableES5, enableMapSet} from "immer";
+enableES5();
+
 /**
  * Change the value of email property within an object.
  * You should use the spread operator to shallow copy the original object.
@@ -42,6 +45,15 @@
  * shoppingCart[0].price = 9000000; // This should not change newShoppingCart
  * newItem.price = 10; // This should not change newItem
  */
-const addToCart = (shoppingCart, newItem) => {};
+ const addToCart = (shoppingCart, newItem) => {
+
+  const newOrder = JSON.parse(JSON.stringify(
+    shoppingCart
+  ));
+  for(let [thing, descrip] in Object.entries(newItem)){
+    newOrder[thing] = descrip;
+  }
+  return newOrder;
+};
 
 export { changeEmail, addToCart };

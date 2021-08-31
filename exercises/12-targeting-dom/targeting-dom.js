@@ -12,4 +12,7 @@
  */
 (function () {
   // Put your answers in here
+  const myChoice = document.querySelector("li");
+  console.log(myChoice);
+  myChoice.innerHTML = "this is not changed";
 })();

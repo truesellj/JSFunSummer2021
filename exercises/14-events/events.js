@@ -1,8 +1,55 @@
 /**
  * You have three challenges to solve below with Vanilla JavaScript.
  * You are allowed to make changes to the HTML and CSS.
- */
+ **/
+(function () { 
+  const alertButton = document.querySelector("button");
+  const chargeButton = document.querySelector(".btn.btn-warning");
+  const viewComments = document.querySelector("p > button");
+  const comments = document.querySelector(".card.card-body");
+  const mysteryBox = document.querySelector("#inputArea");
+  const mystery = document.querySelector("#outputArea");
+  const sButton =document.querySelector("#searchButton");
+  const sForm = document.querySelector("#sForm");
+  const sBox = document.querySelector("#searchBox");
+  const sOutput = document.querySelector("#searchOutput");
+  let onOrOff = 0;
 
+  const showAlert = () => {
+    alert("You've been alerted!");
+  };
+  const disablePay = (event) =>{
+    chargeButton.disabled = "disabled";
+    event.target.textContent = "Loadinrg...";
+  };
+  const showComments = () => {
+    if (onOrOff === 0){
+    comments.classList.remove("hidden");
+    onOrOff=1;
+    viewComments.textContent = "Hide Comments";
+    }
+    else{
+      comments.classList.add("hidden");
+      viewComments.textContent = "View Comments";
+      onOrOff=0;
+    }
+  };
+  const showRes = () => {
+    sOutput.textContent = "No results for " + sBox.value + " found.";
+  }
+  const outputText = () => {
+    mystery.textContent = mysteryBox.value;
+  };
+  sForm.addEventListener("submit", event => {
+    event.preventDefault();
+  });
+  sButton.addEventListener("click", showRes);
+  alertButton.addEventListener("click", showAlert);
+  chargeButton.addEventListener("click", disablePay);
+  viewComments.addEventListener("click", showComments);
+  mysteryBox.addEventListener("input", outputText);
+
+})();
 /**
  * Challenge 1: Alert Me
  * When the clicks on the button that says "Alert Me!", it should display an alert.
