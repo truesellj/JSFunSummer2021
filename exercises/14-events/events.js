@@ -36,7 +36,7 @@
   };
   const showRes = () => {
     sOutput.textContent = "No results for " + sBox.value + " found.";
-  }
+  };
   const outputText = () => {
     mystery.textContent = mysteryBox.value;
   };

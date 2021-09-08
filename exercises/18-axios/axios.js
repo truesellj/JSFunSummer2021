@@ -16,4 +16,48 @@
    *
    * Use the AXIOS library to make AJAX requests.
    */
+  const dDown = document.querySelector("#dropdown");
+  const placeHolder = document.querySelector("#putImageHere");
+  let count = 0;
+  let whoIs = null;
+  let whoId = null;
+  const populateDD = async () =>{
+    try {
+      const {data} = await axios({
+        method: "GET",
+        url: "https://rickandmortyapi.com/api/character"
+      });
+      data.results.forEach(() => {
+        const eachChar = document.createElement("option");
+        whoIs = data.results[count].name;
+        whoId = data.results[count].id;
+        eachChar.textContent = whoIs;
+        eachChar.addEventListener("click",showChar);
+        document.querySelector("#dropdown").appendChild(eachChar);
+        //eachChar.setAttribute("id",count);
+        count++;
+        if (count > 19){
+          count = 0;
+        }
+      });
+    }
+    catch(err){
+      console.log("You received this error: " + err);
+    }
+    //console.log(dDown);
+  };
+  const showChar = async () => {
+    try {
+      const {data} = await axios({
+        method: "GET",
+        url:"https://rickandmortyapi.com/api/character/" + whoId
+      });
+      placeHolder.setAttribute("src",data.image);
+    }
+    catch(err){
+      console.log("You received this error: " + err);
+    }
+    console.log("this is working~~" + whoIs);
+  };
+  dDown.addEventListener("click", populateDD);
 })();
