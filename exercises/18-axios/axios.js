@@ -32,7 +32,6 @@
         whoIs = data.results[count].name;
         whoId = data.results[count].id;
         eachChar.textContent = whoIs;
-        eachChar.addEventListener("click",showChar);
         document.querySelector("#dropdown").appendChild(eachChar);
         //eachChar.setAttribute("id",count);
         count++;
@@ -47,10 +46,11 @@
     //console.log(dDown);
   };
   const showChar = async () => {
+    let selections = dDown.options[dDown.selectedIndex];
     try {
       const {data} = await axios({
         method: "GET",
-        url:"https://rickandmortyapi.com/api/character/" + whoId
+        url:"https://rickandmortyapi.com/api/character/" + selections.index
       });
       placeHolder.setAttribute("src",data.image);
     }
@@ -58,6 +58,9 @@
       console.log("You received this error: " + err);
     }
     console.log("this is working~~" + whoIs);
+    console.log(selections);
   };
   dDown.addEventListener("click", populateDD);
+  dDown.addEventListener("change", showChar);
+  
 })();
